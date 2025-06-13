@@ -50,7 +50,7 @@ public static void followLine(Finch f) {
 
 ---
 
-### The upbringing of the putter
+### The Upbringing Of The Putter
 - Original ideas involved a dart game. That felt too little user interaction and too much human interaction. A golf puck was far more innovative and Mr. Hans gave me the green light.
 
 - From this project I brainstomed ways to create the joint of this design which deemed to be a challenge. I settled with a design that only moved in one direction so it's more about the position of the robot instead of steadiness of human tampering.

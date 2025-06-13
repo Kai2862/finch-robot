@@ -1,1 +1,58 @@
 # finch-robot
+
+### Development Checklist
+
+| Completed | Task         | Description |
+|:---------:| :-----------:|:------------|
+|    ✅     | Familiarize  | Learn how to: <ul><li>Connect to the robot</li><li>Interpret what built-in sensors detect</li><li>Program basics in SNAP!</li><li>Setup local developing environment to code in Java</li></ul>|
+|    ✅     | 3D Design    |             |
+|    ❌     | Develop Code |             |
+
+---
+
+<details>
+<summary><strong>Inspiration for the Project</strong></summary>
+
+I wanted to serve people **Oreos** as a prize for participating!
+</details>
+
+---
+
+### Design Cycle
+<img src="design_cycle.png" alt="design cycle" width="300" height="300">
+
+###### The process when designing the golf puck included:
+- Getting dimentions and measurements of the robot.
+- Creating a joint system that moves in one direction.
+- Attatching the joint the arm system and creating a base for the puck.
+- The joint that I chose needed 3 parts: 2 parts attatched by an attatchment that would be glued onto a flat piece serving as an ancor.
+- laying the design flat for minimal redundency when printing
+
+---
+
+### Code to Highlight
+```java
+public static void followLine(Finch f) {
+	int left = f.getLine("L");
+	int right = f.getLine("R");
+	
+	System.out.println("left: " + left + " right: " + right);
+	if (left < 90) {
+		f.setMotors(0, 10);
+	} else if (right > 90) {
+		f.setMotors(10, 0);
+	} else {
+		f.setMotors(10, 10);
+	}
+	f.pause(.1);
+}
+```
+
+---
+
+### Choose At Least Three of the Following to Include:
+- What was your motivation?
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+- What problem does it solve?
+- What did you learn?
+- What makes your project stand out?
